@@ -1,2 +1,2 @@
-# class-visual-guides
-Brief tutorials on intro to GitHub and various program installations
+# Class Visual Guides
+Brief tutorials on introductions to GitHub and various program installations
