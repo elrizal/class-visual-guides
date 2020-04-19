@@ -17,10 +17,17 @@
 
 6.) If you make changes to your code or make new files, start the update with `git add .` in your command line. This starts your commit.
 
-7.) Then type `git commit -m "first commit"` Note any files being added. If you get an "untracked files" warning you can follow the suggestion to make sure all the files you intend to send up are there.
+7.) Then type `git commit -m "a message to describe a change you made"` Note any files being added. If you get an "untracked files" warning you can follow the suggestion to make sure all the files you intend to send up are there.
 ![push](assets/gitadd.jpg)
 and `git push`:
 ![push](assets/41-in-gitbash-git-push---all-your-files-to-github.jpg)
+
+## Pulling from an existing repository 
+Go over to the link for the repository and clone with SSH:
+![class](assets/clone-class.png)
+Open up you CLI and `git clone SSH-copied`. Change directory into it type `git pull`
+
+*Potential errors:*  If you modified files at any point and then request a pull, you'll be asked to commit the changes. Since you aren't a collaborator on the repository, you can just store your accidental changes or work via `git stash`. You typically won't use this in a work-setting, but for the class we'll just put aside any edits.
 
 ## Deploying your repository 
 1.) In the repository that you want to make public (deploy) go to "Settings" from the same view above. 
@@ -31,10 +38,3 @@ and `git push`:
 ![3](assets/03-scroll-to-githubpages-click-none.jpg)
 
 *Important: make sure you have an "index.html" file in your repository, otherwise you will only be shown the read-me file when you select to deploy. 
-
-## Pulling from a repository 
-Go over to the link for the repository and clone with SSH:
-![class](assets/clone-class.png)
-Open up you CLI and `git clone SSH-copied`. Change directory into it type `git pull`
-
-*Potential errors:*  If you modified files at any point and then request a pull, you'll be asked to commit the changes. Since you aren't a collaborator on the repository, you can just store your accidental changes or work via `git stash`. You typically may not use this in a work-setting, but for the class we'll just put aside any edits.
