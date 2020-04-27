@@ -1,3 +1,5 @@
+SKIP TO: [Pulling](#Pulling-from-an-existing-repository) | [Deploying](#Deploying-your-repository) | Branching/Collaboration 
+
 ## Creating a New Repository
 1.) Go to github.com -> Select the **+** on the top right -> New repository.
 
@@ -38,3 +40,11 @@ Open up you CLI and `git clone SSH-copied`. Change directory into it type `git p
 ![3](assets/03-scroll-to-githubpages-click-none.jpg)
 
 *Important: make sure you have an "index.html" file in your repository, otherwise you will only be shown the read-me file when you select to deploy. 
+
+## Working with others on Github
+
+1.) In a group, one person creates the repository. This person will be overseeing it and inviting other developers to work on the project. 
+
+2.) Go to "settings" -> "manage options". Check "invite a collaborator". Here, enter a team-mate's name. Once you're done, everyone should recieve a notification to their email associated with their Github account. 
+
+3.) Everyone clones the repository. For your CLI, `git checkout -b new-branch-name`. This is the branch that you, as an individual collaborator. When you go through the usual staging for pushing (`git add .` -> `git commit -m "message" `) you push to your own branch via `git push origin new-branch-name`
